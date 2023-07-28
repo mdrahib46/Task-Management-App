@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:task_management_app/ui/screens/eamil_verification_screen.dart';
 import '../Widgets/screen_background.dart';
 
 class SignupScreen extends StatelessWidget {

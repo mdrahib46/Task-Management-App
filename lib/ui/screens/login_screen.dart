@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task_management_app/ui/screens/eamil_verification_screen.dart';
 import 'package:task_management_app/ui/screens/signup_screen.dart';
 import '../Widgets/screen_background.dart';
+import 'bottom_nav_base_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -23,27 +24,29 @@ class LoginScreen extends StatelessWidget {
                     Text("Get Started With",
                         style: Theme.of(context).textTheme.titleLarge),
                     const SizedBox(height: 16),
-                    TextFormField(
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: const InputDecoration(
-                        hintText: 'Email',
-                      ),
-                    ),
-                    const SizedBox(height: 14),
-                    TextFormField(
-                      obscureText: true,
-                      decoration: const InputDecoration(
-                        hintText: 'Password',
-                        suffixIcon: Icon(
-                          Icons.remove_red_eye_outlined,
+                      TextFormField(
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          hintText: 'Email',
                         ),
                       ),
-                    ),
+                      const SizedBox(height: 14),
+                      TextFormField(
+                        obscureText: true,
+                        decoration: const InputDecoration(
+                          hintText: 'Password',
+                          suffixIcon: Icon(
+                            Icons.remove_red_eye_outlined,
+                          ),
+                        ),
+                      ),
                     const SizedBox(height: 20),
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => const BottomNavBaseScreen()), (route) => false);
+                          },
                           child: const Icon(Icons.arrow_forward_ios)),
                     ),
                     const SizedBox(height: 50),
