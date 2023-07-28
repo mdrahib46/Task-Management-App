@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_management_app/ui/Widgets/screen_background.dart';
+import 'package:task_management_app/ui/screens/OTP_verification_screen.dart';
 
 class VerificationScreen extends StatelessWidget {
   const VerificationScreen({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class VerificationScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 70),
-              Text("Get Started With",
+              Text("Your email address",
                   style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 5),
               Text(
@@ -33,7 +34,9 @@ class VerificationScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const OTPVerificationScreen()));
+                  },
                   child: const Icon(
                     Icons.arrow_forward_ios,
                   ),
