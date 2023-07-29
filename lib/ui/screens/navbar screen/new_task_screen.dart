@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task_management_app/ui/screens/Bottom%20nav%20Screen/add_new_task_screen.dart';
-
 import '../../Widgets/summary_card.dart';
 import '../../Widgets/task_list_tile.dart';
 import '../../Widgets/user_profile_banner.dart';
+import 'add_new_task_screen.dart';
 
 class NewTaskScreen extends StatelessWidget {
   const NewTaskScreen({Key? key}) : super(key: key);

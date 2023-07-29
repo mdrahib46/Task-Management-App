@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:task_management_app/ui/screens/Bottom%20nav%20Screen/cancel_screen.dart';
-import 'package:task_management_app/ui/screens/Bottom%20nav%20Screen/completed_screen.dart';
-import 'package:task_management_app/ui/screens/Bottom%20nav%20Screen/in_progress_screen.dart';
-import 'package:task_management_app/ui/screens/Bottom%20nav%20Screen/new_task_screen.dart';
+import 'package:task_management_app/ui/screens/navbar%20screen/new_task_screen.dart';
+
+import 'cancel_screen.dart';
+import 'completed_screen.dart';
+import 'in_progress_screen.dart';
 
 class BottomNavBaseScreen extends StatefulWidget {
   const BottomNavBaseScreen({Key? key}) : super(key: key);

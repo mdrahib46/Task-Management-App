@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task_management_app/ui/screens/eamil_verification_screen.dart';
-import 'package:task_management_app/ui/screens/signup_screen.dart';
-import '../Widgets/screen_background.dart';
-import 'bottom_nav_base_screen.dart';
+import 'package:task_management_app/ui/screens/auth%20screen/eamil_verification_screen.dart';
+import 'package:task_management_app/ui/screens/auth%20screen/signup_screen.dart';
+import '../../Widgets/screen_background.dart';
+import '../navbar screen/bottom_nav_base_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
